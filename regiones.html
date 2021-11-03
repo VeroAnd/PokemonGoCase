@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Pokemon Go Caseros</title>
+    <link rel="icon" href="../imagenes/favicon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="Css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Pacifico&family=Roboto+Mono:wght@300&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/29f4cb3881.js" crossorigin="anonymous"></script>
+
+    <script src="script.js" type="text/javascript" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <h1 class="tituloPrincipal"> Pokemon Go <br> Caseros </h1>
+
+    </header>
+    <nav class="media">
+        <ul class="menu">
+            <li> <i class="fas fa-home"></i> <br>
+                <a href="index.html">Inicio </a>
+            </li>
+            <li> <i class="fas fa-calculator"></i> <br>
+                <a href="regiones.html">Pokedex </a>
+            </li>
+            <li><i class="fas fa-qrcode"></i> <br>
+                <a href="codigos.html">Codigos de Amistad</a>
+            </li>
+            <li> <i class="fas fa-gift"></i> <br>
+                <a href="shop.html">Shop</a>
+            </li>
+            <li class="redes"> <i class="fab fa-instagram fa-2x"></i></i> <br>
+                <a href="https://www.instagram.com/pogocaseros" target="_blank"> Instagram</a>
+            </li>
+
+        </ul>
+
+    </nav>
+    <div class="regiones">
+        <div class="Kanto">
+            <h3 class="h3">Kanto</h3>
+            <p>
+                Los Pokémon iniciales son: Bulbasaur, Charmander y Squirtle. En Pokémon Amarillo tu inicial es Pikachu y
+                el del rival es Eevee. El profesor es Oak y su ciudad principal es Ciudad Azafrán. <br>
+                Los protagonistas de esta Región en el anime son Ash Ketchum, Misty y Brock.<br>
+
+            </p>
+        </div>
+        <div class="Johto">
+            <h3 class="h3">Johto</h3>
+            <p>
+                Los Pokémon iniciales son: Chikorita, Cyndaquil y Totodile. El profesor es Elm, mientras que Ciudad
+                Trigal es la principal de todas sus ciudades. <br>
+                En esta región Ash, Misty y Brock siguen juntos de viaje.<br>
+
+            </p>
+        </div>
+        <div class="Hoenn">
+            <h3 class="h3">Hoenn</h3>
+            <p>
+                Los Pokémon iniciales son: Treecko, Torchic y Mudkip. <br>
+                En esta región Misty abandona el grupo y se unen May/Aura y Max.<br>
+            </p>
+        </div>
+        <div class="Sinnoh">
+            <h3 class="h3">Sinnoh</h3>
+            <p>Los Pokémon iniciales son: Turtwig, Chimchar y Piplup.
+                Aquí May/Aura y Max abandona el grupo y se une Dawn/Maya. <br> <br>
+            </p>
+        </div>
+        <div class="Teselia">
+            <h3 class="h3">Tesselia</h3>
+            <p>Los Pokémon iniciales son: Snivy, Tepig y Oshawott.<br>
+                Brock y Dawn/Maya abandonan el grupo y en su lugar se une Iris, Cilan/Millo y N. <br>
+            </p>
+        </div>
+        <div class="Kalos">
+            <h3 class="h3">Kalos</h3>
+            <p>Los Pokémon iniciales son: Chespin, Fennekin y Froakie. <br>
+                Iris y Cilan/Millo abandonan el grupo y se unen Serena, Clemont/Lem y Bonnie/Clem.<br>
+            </p>
+        </div>
+        <div class="Alola">
+            <h3 class="h3">Alola</h3>
+            <p>La región de Alola está basada principalmente en Hawái, y está conformada por cuatro islas naturales y
+                una artificial. Introducida para la séptima generación. <br>
+                Los Pokémon iniciales son: Rowlet, Litten y Popplio. <br>
+                Clemont/Lem, Bonnie/Clem y Serena abandonan el grupo y se unen Lillie/Lylia, y los capitanes de las
+                distintas pruebas de las islas de Alola. <br>
+            </p>
+        </div>
+        <div class="Galar">
+            <h3 class="h3">Galar</h3>
+            <p>La región de Galar parece estar basada en Inglaterra. Será introducida en la octava generación. En esta
+                región transcurren los videojuegos Pokémon Espada y Pokémon Escudo. <br>
+
+                Los Pokémon iniciales son: Grookey, Scorbunny y Sobble.</p>
+        </div>
+    </div>
+
+
+
+    <div class="pokedexP">
+        <h3>Busca tu Pokemon!</h3>
+        <p>Ingresa en la casilla el nombre o el numero de la pokedex y obtendras informacion acerca del tipo y de los
+            puntos de ataque, de defensa.
+            Recuerda escribir su nombre correctamente! </p>
+
+        <div class="pokedex">
+            <form class="form" action="" onsubmit="searchPokemon(event)">
+                <input class="input" type="text" name="pokemon" autocomplete="on">
+            </form>
+
+            <div data-poke-card="poke-card" class="poke-card">
+                <div data-poke-name>Pokedex</div>
+                <div data-poke-img-container class="img-container">
+                    <img data-poke-img class="poke-img" src="/img/pokeshadow.jpg" width="100" alt="sombra">
+                </div>
+                <div data-poke-id></div>
+                <div data-poke-types class="poke-types"></div>
+                <div data-poke-stats class="poke-stats"></div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="jiglypuff">
+
+        <footer>
+            <p class="footer">
+                © 2021 Todos los derechos reservados <br>
+                Powered By • VeroAnd•
+            </p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
